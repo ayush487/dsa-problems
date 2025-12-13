@@ -1,3 +1,5 @@
+// POTD : 13/12/2025
+
 public class SwapDiagonals {
   public static void main(String[] args) {
     int[][] matrix = { { 0, 1, 2 },
