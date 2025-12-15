@@ -25,9 +25,7 @@ public class WordLadder1 {
     wordList = addWord(startWord, wordList);
     List<List<Integer>> edges = new ArrayList<>();
     collectEdges(edges, wordList);
-    for (List<Integer> edge : edges) {
-      System.out.printf("%s %s\n", wordList[edge.get(0)],wordList[edge.get(1)]);
-    }
+    
     int startWordIdx = 0;
     int targetWordIdx = 0;
     for (int i = 0; i < wordList.length; i++) {
