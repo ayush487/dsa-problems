@@ -1,14 +1,17 @@
-class Node {
-  Node next;
-  int data;
 
-  Node(int d) {
-    data = d;
-    next = null;
-  }
-}
 
 public class KElementLast {
+
+  static class Node {
+    Node next;
+    int data;
+
+    Node(int d) {
+      data = d;
+      next = null;
+    }
+  }
+
   public static void main(String[] args) {
     KElementLast obj = new KElementLast();
     Node root = new Node(1);

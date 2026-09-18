@@ -59,14 +59,15 @@ public class PalindromeLinkedList {
     }
   }
 
-}
+  static class Node {
+    Node next;
+    int data;
 
-class Node {
-  Node next;
-  int data;
-
-  Node(int d) {
-    data = d;
-    next = null;
+    Node(int d) {
+      data = d;
+      next = null;
+    }
   }
+
 }
+

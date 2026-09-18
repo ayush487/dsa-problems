@@ -1,16 +1,18 @@
-class Node {
-    int data;
-    Node next;
 
-    Node(int d) {
-        data = d;
-        next = null;
-    }
-}
 
 public class AddNumberLL {
     public static void main(String[] args) {
 
+    }
+
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int d) {
+            data = d;
+            next = null;
+        }
     }
 
     public Node addTwoLists(Node head1, Node head2) {

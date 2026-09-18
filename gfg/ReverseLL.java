@@ -1,14 +1,17 @@
-class Node {
-    int data;
-    Node next;
 
-    Node(int x) {
-        data = x;
-        next = null;
-    }
-}
 
 public class ReverseLL {
+
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int x) {
+            data = x;
+            next = null;
+        }
+    }
+
     public static void main(String[] args) {
         Node head = new Node(1);
         head.next = new Node(2);
