@@ -18,8 +18,6 @@ public class ElementInRange {
     };
     var al = eir.cntInRange(arr, queries);
     System.out.println(al);
-
-
   }
 
   public ArrayList<Integer> cntInRange(int[] arr, int[][] queries) {
