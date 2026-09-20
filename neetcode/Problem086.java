@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Problem086 {
-    public class TreeNode {
+    public static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
