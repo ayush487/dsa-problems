@@ -1,4 +1,14 @@
 public class ReverseLinkedList {
+
+  static class Node {
+    Node next;
+    int data;
+
+    Node(int d) {
+      data = d;
+      next = null;
+    }
+  }
   public static void main(String[] args) {
     Node root = new Node(1);
     ReverseLinkedList r = new ReverseLinkedList();
@@ -35,12 +45,3 @@ public class ReverseLinkedList {
   }
 }
 
-class Node {
-  Node next;
-  int data;
-
-  Node(int d) {
-    data = d;
-    next = null;
-  }
-}
