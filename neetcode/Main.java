@@ -7,6 +7,18 @@ public class Main {
 
     }
 
+    // Problem 99
+    static void problem99() {
+        Problem099 problem = new Problem099();
+        Problem099.TreeNode root = new Problem099.TreeNode(2);
+        root.left = new Problem099.TreeNode(1);
+        root.right = new Problem099.TreeNode(1);
+        root.left.left = new Problem099.TreeNode(3);
+        root.right.left = new Problem099.TreeNode(1);
+        root.right.right = new Problem099.TreeNode(5);
+        System.out.println("Good Node : " + problem.goodNodes(root));
+    }
+
     // Problem 98
     static void problem98() {
         int[][] grid = {
