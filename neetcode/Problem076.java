@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Problem076 {
 
-    private static class Node {
+    static class Node {
         int val;
         Node next;
         Node random;
