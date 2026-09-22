@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Problem101 {
+public class  Problem101 {
     static class TreeNode {
         int val;
         TreeNode left;
