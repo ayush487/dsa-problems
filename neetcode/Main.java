@@ -7,6 +7,19 @@ public class Main {
 
     }
 
+    //    Problem 101
+    static void problem101() {
+        Problem101.TreeNode root = new Problem101.TreeNode(5);
+        root.left = new Problem101.TreeNode(3);
+        root.right = new Problem101.TreeNode(8);
+        root.left.left = new Problem101.TreeNode(1);
+        root.right.left = new Problem101.TreeNode(6);
+        root.right.right = new Problem101.TreeNode(10);
+        Problem101 problem = new Problem101();
+        int ans = problem.kthSmallest(root, 2);
+        System.out.println(ans);
+    }
+
     // Problem 99
     static void problem99() {
         Problem099 problem = new Problem099();
