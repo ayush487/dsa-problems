@@ -4,9 +4,23 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-
+        problem103();
     }
 
+    static void problem103() {
+        Problem103 problem = new Problem103();
+        Problem103.TreeNode root = new Problem103.TreeNode(5);
+        root.left = new Problem103.TreeNode(3);
+        root.right = new Problem103.TreeNode(8);
+        root.left.left = new Problem103.TreeNode(1);
+        root.right.left = new Problem103.TreeNode(6);
+        root.right.right = new Problem103.TreeNode(10);
+        root.right.right.right = new Problem103.TreeNode(12);
+        String treeEncoded = problem.serialize(root);
+        System.out.println(treeEncoded);
+        System.out.println(problem.serialize(problem.deserialize(treeEncoded)));
+
+    }
 
 
     //    Problem 101
