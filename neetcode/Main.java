@@ -4,7 +4,20 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem103();
+        problem105();
+    }
+
+    static void problem105() {
+        Problem105 problem = new Problem105();
+        Problem105.TreeNode root = new Problem105.TreeNode(5);
+        root.left = new Problem105.TreeNode(3);
+        root.right = new Problem105.TreeNode(8);
+        root.left.left = new Problem105.TreeNode(1);
+        root.right.left = new Problem105.TreeNode(6);
+        root.right.right = new Problem105.TreeNode(10);
+        root.right.right.right = new Problem105.TreeNode(10);
+        Problem105.TreeNode nr = problem.removeLeafNodes(root, 10);
+        System.out.println(nr);
     }
 
     static void problem103() {
