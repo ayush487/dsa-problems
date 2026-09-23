@@ -4,7 +4,14 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem106();
+        problem107();
+    }
+
+    static void problem107() {
+        int[] stones = {2,3,6,2,4};
+        Problem107 problem = new Problem107();
+        int lastStone = problem.lastStoneWeight(stones);
+        System.out.println(lastStone);
     }
 
     static void problem106() {
