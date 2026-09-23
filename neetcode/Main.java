@@ -4,7 +4,12 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem105();
+        problem106();
+    }
+
+    static void problem106() {
+        int[] arr = {1,2,3,3};
+        KthLargest k = new KthLargest(3,arr );
     }
 
     static void problem105() {
