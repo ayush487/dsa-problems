@@ -4,7 +4,16 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem107();
+        problem108();
+    }
+
+    static void problem108() {
+        int[][] points = {{0,2},{2,0},{4,1},{2,2}};
+        Problem108 problem = new Problem108();
+        int[][] results = problem.kClosest(points, 2);
+        for (int[] r : results) {
+            System.out.println(r[0] + " , " + r[1]);
+        }
     }
 
     static void problem107() {
