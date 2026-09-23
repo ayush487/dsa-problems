@@ -4,11 +4,18 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem108();
+        problem110();
+    }
+
+    static void problem110() {
+        char[] tasks = {'A', 'A', 'B'};
+        Problem110 problem = new Problem110();
+        var ans = problem.leastInterval(tasks, 0);
+        System.out.println(ans);
     }
 
     static void problem108() {
-        int[][] points = {{0,2},{2,0},{4,1},{2,2}};
+        int[][] points = {{0, 2}, {2, 0}, {4, 1}, {2, 2}};
         Problem108 problem = new Problem108();
         int[][] results = problem.kClosest(points, 2);
         for (int[] r : results) {
@@ -17,15 +24,15 @@ public class Main {
     }
 
     static void problem107() {
-        int[] stones = {2,3,6,2,4};
+        int[] stones = {2, 3, 6, 2, 4};
         Problem107 problem = new Problem107();
         int lastStone = problem.lastStoneWeight(stones);
         System.out.println(lastStone);
     }
 
     static void problem106() {
-        int[] arr = {1,2,3,3};
-        KthLargest k = new KthLargest(3,arr );
+        int[] arr = {1, 2, 3, 3};
+        KthLargest k = new KthLargest(3, arr);
     }
 
     static void problem105() {
