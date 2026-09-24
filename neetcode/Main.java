@@ -4,7 +4,26 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem110();
+        problem111();
+    }
+
+    static void problem111() {
+        Twitter twitter = new Twitter();
+        twitter.postTweet(3, 35);
+        twitter.postTweet(5, 36);
+        twitter.postTweet(5, 37);
+        twitter.postTweet(5, 38);
+        twitter.postTweet(5, 39);
+        twitter.postTweet(3, 40);
+        twitter.postTweet(5, 41);
+        twitter.postTweet(5, 42);
+        twitter.postTweet(5, 43);
+        twitter.postTweet(3, 44);
+        twitter.postTweet(3, 45);
+        System.out.println(twitter.getNewsFeed(5));
+        System.out.println(twitter.getNewsFeed(3));
+        twitter.follow(3,5);
+        System.out.println(twitter.getNewsFeed(3));
     }
 
     static void problem110() {
