@@ -4,7 +4,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem114();
+        problem115();
+    }
+
+    static void problem115() {
+        Problem115 problem = new Problem115();
+        boolean isTrip = problem.carPooling(new int[][]{{2,1,3},{3,2,4}}, 4);
+        System.out.println(isTrip);
     }
 
     static void problem114() {
