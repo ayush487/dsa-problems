@@ -4,7 +4,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem116();
+        problem117();
+    }
+
+    static void problem117() {
+        Problem117 problem = new Problem117();
+        int finalCapital = problem.findMaximizedCapital(4, 2, new int[]{2, 3, 1, 5, 3}, new int[]{4, 4, 2, 3, 3});
+        System.out.println(finalCapital);
     }
 
     static void problem116() {
