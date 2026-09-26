@@ -4,7 +4,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem113();
+        problem114();
+    }
+
+    static void problem114() {
+        Problem114 problem = new Problem114();
+        String happyString = problem.longestDiverseString(3,4,2);
+        System.out.println(happyString);
     }
 
     static void problem113() {
