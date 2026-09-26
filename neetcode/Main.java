@@ -4,7 +4,15 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem112();
+        problem113();
+    }
+
+    static void problem113() {
+        Problem113 problem = new Problem113();
+        String reorganizedString1 = problem.reorganizeString("aaaaaabbcc");
+        System.out.println(reorganizedString1);
+        String reorganizedString2 = problem.reorganizeString("abchskaaaaa");
+        System.out.println(reorganizedString2);
     }
 
     static void problem112() {
