@@ -4,18 +4,43 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem115();
+        problem116();
+    }
+
+    static void problem116() {
+        MedianFinder medianFinder = new MedianFinder();
+        medianFinder.addNum(1);
+        System.out.println(medianFinder.findMedian());
+        medianFinder.addNum(2);
+        System.out.println(medianFinder.findMedian());
+        medianFinder.addNum(3);
+        System.out.println(medianFinder.findMedian());
+        medianFinder.addNum(2);
+        System.out.println(medianFinder.findMedian());
+        medianFinder.addNum(2);
+        System.out.println(medianFinder.findMedian());
+        medianFinder.addNum(2);
+        System.out.println(medianFinder.findMedian());
+        medianFinder.addNum(1);
+        System.out.println(medianFinder.findMedian());
+        medianFinder.addNum(3);
+        System.out.println(medianFinder.findMedian());
+        medianFinder.addNum(3);
+        System.out.println(medianFinder.findMedian());
+        medianFinder.addNum(3);
+        System.out.println(medianFinder.findMedian());
+
     }
 
     static void problem115() {
         Problem115 problem = new Problem115();
-        boolean isTrip = problem.carPooling(new int[][]{{2,1,3},{3,2,4}}, 4);
+        boolean isTrip = problem.carPooling(new int[][]{{2, 1, 3}, {3, 2, 4}}, 4);
         System.out.println(isTrip);
     }
 
     static void problem114() {
         Problem114 problem = new Problem114();
-        String happyString = problem.longestDiverseString(3,4,2);
+        String happyString = problem.longestDiverseString(3, 4, 2);
         System.out.println(happyString);
     }
 
@@ -31,9 +56,9 @@ public class Main {
         Problem112 problem = new Problem112();
         int[] order1 = problem.getOrder(new int[][]{{1, 4}, {3, 3}, {2, 1}});
         int[] order2 = problem.getOrder(new int[][]{{5, 2}, {4, 4}, {4, 1}, {2, 1}, {3, 3}});
-        int[] order3 = problem.getOrder(new int[][]{{1,2},{2,4},{3,2},{4,1}});
-        int[] order5 = problem.getOrder(new int[][]{{58,33},{58,33},{51,42},{51,56}});
-        int[] order4 = problem.getOrder(new int[][]{{1000000000,1000000000}});
+        int[] order3 = problem.getOrder(new int[][]{{1, 2}, {2, 4}, {3, 2}, {4, 1}});
+        int[] order5 = problem.getOrder(new int[][]{{58, 33}, {58, 33}, {51, 42}, {51, 56}});
+        int[] order4 = problem.getOrder(new int[][]{{1000000000, 1000000000}});
         for (int o : order1) System.out.print(o + " ");
         System.out.println();
         for (int o : order2) System.out.print(o + " ");
