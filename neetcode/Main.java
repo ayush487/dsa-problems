@@ -6,7 +6,18 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-        problem121();
+        problem122();
+    }
+
+    static void problem122() {
+        Problem122 problem = new Problem122();
+        var ans = problem.combine(1,1);
+        for (var a : ans) {
+            for (var b : a) {
+                System.out.print(b + " ");
+            }
+            System.out.println();
+        }
     }
 
     static void problem121() {
