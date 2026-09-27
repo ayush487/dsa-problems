@@ -1,10 +1,23 @@
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
 
     public static void main(String[] args) {
-        problem117();
+        problem120();
+    }
+
+    static void problem120() {
+        Problem120 problem = new Problem120();
+        var ans = problem.combinationSum(new int[]{3,4,5}, 16);
+        for (var a : ans) {
+            for (var b : a) {
+                System.out.print(b + " ");
+            }
+            System.out.println();
+        }
     }
 
     static void problem117() {
