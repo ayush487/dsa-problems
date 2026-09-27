@@ -6,7 +6,20 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-        problem122();
+        problem124();
+    }
+
+    static void problem124() {
+        Problem124 problem = new Problem124();
+        var ans = problem.subsetsWithDup(new int[]{1,2,1});
+        for (var a : ans) {
+            System.out.print("[ ");
+            for (var b : a) {
+                System.out.print(b + " ");
+            }
+            System.out.print(" ]");
+            System.out.println();
+        }
     }
 
     static void problem122() {
