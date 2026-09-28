@@ -6,7 +6,13 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-        problem127();
+        problem128();
+    }
+
+    static void problem128() {
+        Problem128 problem = new Problem128();
+        var ans = problem.partition("aaba");
+        System.out.println(ans);
     }
 
     static void problem127() {
