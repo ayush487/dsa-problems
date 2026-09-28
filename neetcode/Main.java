@@ -6,7 +6,17 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-        problem126();
+        problem127();
+    }
+
+    static void problem127() {
+        Problem127 problem = new Problem127();
+        char[][] board = {
+                {'A', 'B', 'C', 'D'},
+                {'S', 'A', 'A', 'T'},
+                {'A', 'C', 'A', 'E'}};
+        boolean doesExist = problem.exist(board, "CAATD");
+        System.out.println(doesExist);
     }
 
     static void problem126() {
@@ -17,7 +27,7 @@ public class Main {
 
     static void problem125() {
         Problem125 problem = new Problem125();
-        var ans = problem.permuteUnique(new int[]{1,1,2});
+        var ans = problem.permuteUnique(new int[]{1, 1, 2});
         for (var a : ans) {
             System.out.print("[ ");
             for (var b : a) {
@@ -31,7 +41,7 @@ public class Main {
 
     static void problem124() {
         Problem124 problem = new Problem124();
-        var ans = problem.subsetsWithDup(new int[]{1,2,1});
+        var ans = problem.subsetsWithDup(new int[]{1, 2, 1});
         for (var a : ans) {
             System.out.print("[ ");
             for (var b : a) {
@@ -44,7 +54,7 @@ public class Main {
 
     static void problem122() {
         Problem122 problem = new Problem122();
-        var ans = problem.combine(1,1);
+        var ans = problem.combine(1, 1);
         for (var a : ans) {
             for (var b : a) {
                 System.out.print(b + " ");
@@ -55,7 +65,7 @@ public class Main {
 
     static void problem121() {
         Problem121 problem = new Problem121();
-        var ans = problem.combinationSum2(new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,1,2,3,4,5,6,7,8,9,10}, 30);
+        var ans = problem.combinationSum2(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 30);
         for (var a : ans) {
             for (var b : a) {
                 System.out.print(b + " ");
@@ -66,7 +76,7 @@ public class Main {
 
     static void problem120() {
         Problem120 problem = new Problem120();
-        var ans = problem.combinationSum(new int[]{3,4,5}, 16);
+        var ans = problem.combinationSum(new int[]{3, 4, 5}, 16);
         for (var a : ans) {
             for (var b : a) {
                 System.out.print(b + " ");
