@@ -6,7 +6,13 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-        problem125();
+        problem126();
+    }
+
+    static void problem126() {
+        Problem126 problem = new Problem126();
+        var ans = problem.generateParenthesis(3);
+        for (String a : ans) System.out.println(a);
     }
 
     static void problem125() {
