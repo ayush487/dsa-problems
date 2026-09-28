@@ -1,12 +1,16 @@
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class Main {
 
     public static void main(String[] args) {
-        problem128();
+        problem129();
+    }
+
+    static void problem129() {
+        Problem129 problem = new Problem129();
+        var ans = problem.letterCombinations("34");
+        System.out.println(ans);
     }
 
     static void problem128() {
