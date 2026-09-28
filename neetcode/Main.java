@@ -6,8 +6,22 @@ import java.util.Set;
 public class Main {
 
     public static void main(String[] args) {
-        problem124();
+        problem125();
     }
+
+    static void problem125() {
+        Problem125 problem = new Problem125();
+        var ans = problem.permuteUnique(new int[]{1,1,2});
+        for (var a : ans) {
+            System.out.print("[ ");
+            for (var b : a) {
+                System.out.print(b + " ");
+            }
+            System.out.print(" ]");
+            System.out.println();
+        }
+    }
+
 
     static void problem124() {
         Problem124 problem = new Problem124();
