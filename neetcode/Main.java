@@ -1,10 +1,22 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
-        problem129();
+        problem134();
+    }
+
+    static void problem134() {
+        Problem134 problem = new Problem134();
+        List<String> dict = new ArrayList<>();
+        dict.add("racecar");
+        dict.add("race");
+        dict.add("car");
+        dict.add("is");
+        var ans = problem.wordBreak("racecariscar", dict);
+        System.out.println(ans);
     }
 
     static void problem129() {
