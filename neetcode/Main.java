@@ -5,7 +5,18 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem135();
+        problem136();
+    }
+
+    static void problem136() {
+        WordDictionary wordDictionary = new WordDictionary();
+        wordDictionary.addWord("day");
+        wordDictionary.addWord("bay");
+        wordDictionary.addWord("may");
+        System.out.println(wordDictionary.search("say"));
+        System.out.println(wordDictionary.search("day"));
+        System.out.println(wordDictionary.search(".ay"));
+        System.out.println(wordDictionary.search("b.."));
     }
 
     static void problem135() {
