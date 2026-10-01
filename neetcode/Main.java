@@ -5,7 +5,17 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem140();
+        problem141();
+    }
+
+    static void problem141() {
+        int[][] grid = {
+                {1, 1, 0, 0, 1},
+                {1, 1, 0, 0, 1},
+                {0, 0, 1, 0, 0},
+                {0, 0, 0, 1, 1}};
+        Problem141 problem = new Problem141();
+        System.out.println(problem.maxAreaOfIsland(grid));
     }
 
     static void problem140() {
