@@ -5,7 +5,17 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem136();
+        problem140();
+    }
+
+    static void problem140() {
+        char[][] grid = {
+                {'1', '1', '0', '0', '1'},
+                {'1', '1', '0', '0', '1'},
+                {'0', '0', '1', '0', '0'},
+                {'0', '0', '0', '1', '1'}};
+        Problem140 problem = new Problem140();
+        System.out.println(problem.numIslands(grid));
     }
 
     static void problem136() {
