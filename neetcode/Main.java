@@ -5,7 +5,25 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem144();
+        problem145();
+    }
+
+    static void problem145() {
+//
+        char[][] board = {
+                {'X', 'O', 'X', 'X'},
+                {'O', 'X', 'O', 'X'},
+                {'X', 'O', 'X', 'O'},
+                {'O', 'X', 'O', 'X'}
+        };
+        Problem145 problem = new Problem145();
+        problem.solve(board);
+        for (var bo : board) {
+            for (var b : bo) {
+                System.out.print(b);
+            }
+            System.out.println();
+        }
     }
 
     static void problem144() {
