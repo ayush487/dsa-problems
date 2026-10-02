@@ -5,7 +5,18 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem143();
+        problem144();
+    }
+
+    static void problem144() {
+        int[][] grid = {
+                {1, 1, 0},
+                {0, 1, 1},
+                {0, 1, 2}
+        };
+        Problem144 problem = new Problem144();
+        int ans = problem.orangesRotting(grid);
+        System.out.println(ans);
     }
 
     static void problem143() {
