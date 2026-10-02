@@ -5,7 +5,25 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem141();
+        problem143();
+    }
+
+    static void problem143() {
+        int[][] grid = {
+                {2147483647, -1, 0, 2147483647},
+                {2147483647, 2147483647, 2147483647, -1},
+                {2147483647, -1, 2147483647, -1},
+                {0, -1, 2147483647, 2147483647}
+        };
+        Problem143 problem = new Problem143();
+        problem.islandsAndTreasure(grid);
+        for (int[] row : grid) {
+            for (int g : row) {
+                System.out.print(g + " ");
+            }
+            System.out.println();
+        }
+
     }
 
     static void problem141() {
