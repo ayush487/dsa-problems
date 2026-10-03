@@ -5,11 +5,17 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem145();
+        problem147();
+    }
+
+    static void problem147() {
+        Problem147 problem = new Problem147();
+        int[] ans = problem.findOrder(4,
+                new int[][]{{2, 3}, {1, 2}, {0, 1}, {0, 4}, {4, 5}, {5, 1}});
+        for (int a : ans) System.out.println(a);
     }
 
     static void problem145() {
-//
         char[][] board = {
                 {'X', 'O', 'X', 'X'},
                 {'O', 'X', 'O', 'X'},
