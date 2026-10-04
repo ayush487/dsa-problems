@@ -5,7 +5,14 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem150();
+        problem151();
+    }
+
+    static void problem151() {
+        Problem151 problem = new Problem151();
+        var ans = problem.findRedundantConnection(new int[][]{{1,2},{1,3},{1,4},{3,4},{4,5}});
+        System.out.println(ans[0]);
+        System.out.println(ans[1]);
     }
 
     static void problem150() {
