@@ -5,7 +5,16 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem149();
+        problem150();
+    }
+
+    static void problem150() {
+        Problem150 problem = new Problem150();
+        int numCourses = 4;
+        int[][] prerequisites = {{1,0},{2,1},{3,2}};
+        int[][] queries = {{0,1},{3,1}};
+        var ans = problem.checkIfPrerequisite(numCourses, prerequisites, queries);
+        System.out.println(ans);
     }
 
     static void problem149() {
