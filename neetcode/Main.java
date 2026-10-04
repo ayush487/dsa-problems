@@ -5,7 +5,15 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem147();
+        problem148();
+    }
+
+    static void problem148() {
+        Problem148 problem148 = new Problem148();
+        var ans = problem148.validTree(5, new int[][]{{0,1},{0,2},{0,3},{1,4}});
+        System.out.println(ans);
+        ans = problem148.validTree(5, new int[][]{{0,1},{1,2},{2,3},{1,3},{1,4}});
+        System.out.println(ans);
     }
 
     static void problem147() {
