@@ -5,7 +5,38 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem151();
+        problem152();
+    }
+
+    static void problem152() {
+        Problem152 problem = new Problem152();
+        List<List<String>> mainList = new ArrayList<>();
+        var list1 = help152("Hanzo","Hanzo2@m.co","Hanzo3@m.co");
+        var list2 = help152("Hanzo","Hanzo4@m.co","Hanzo5@m.co");
+        var list3 = help152("Hanzo","Hanzo0@m.co","Hanzo1@m.co");
+        var list4 = help152("Hanzo","Hanzo3@m.co","Hanzo4@m.co");
+        var list5 = help152("Hanzo","Hanzo7@m.co","Hanzo8@m.co");
+        var list6 = help152("Hanzo","Hanzo1@m.co","Hanzo2@m.co");
+        var list7 = help152("Hanzo","Hanzo6@m.co","Hanzo7@m.co");
+        var list8 = help152("Hanzo","Hanzo5@m.co","Hanzo6@m.co");
+        mainList.add(list1);
+        mainList.add(list2);
+        mainList.add(list3);
+        mainList.add(list4);
+        mainList.add(list5);
+        mainList.add(list6);
+        mainList.add(list7);
+        mainList.add(list8);
+        var ans = problem.accountsMerge(mainList);
+        for (var a : ans) {
+            System.out.println(a);
+        }
+    }
+
+    private static List<String> help152(String... emails) {
+        List<String> list = new ArrayList<>();
+        for (String email : emails) list.add(email);
+        return list;
     }
 
     static void problem151() {
