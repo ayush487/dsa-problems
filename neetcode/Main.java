@@ -5,20 +5,36 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem152();
+        problem155();
+    }
+
+    static void problem155() {
+        Problem155 problem = new Problem155();
+        List<List<String>> equations = new ArrayList<>();
+        equations.add(convertList("a", "b"));
+        equations.add(convertList("b", "c"));
+        List<List<String>> queries = new ArrayList<>();
+        queries.add(convertList("a", "c"));
+        queries.add(convertList("b", "a"));
+        queries.add(convertList("a", "e"));
+        queries.add(convertList("a", "a"));
+        queries.add(convertList("x", "x"));
+        double[] values = new double[]{2.0, 3.0};
+        double[] ans = problem.calcEquation(equations, values, queries);
+        for (double a : ans) System.out.println(a);
     }
 
     static void problem152() {
         Problem152 problem = new Problem152();
         List<List<String>> mainList = new ArrayList<>();
-        var list1 = help152("Hanzo","Hanzo2@m.co","Hanzo3@m.co");
-        var list2 = help152("Hanzo","Hanzo4@m.co","Hanzo5@m.co");
-        var list3 = help152("Hanzo","Hanzo0@m.co","Hanzo1@m.co");
-        var list4 = help152("Hanzo","Hanzo3@m.co","Hanzo4@m.co");
-        var list5 = help152("Hanzo","Hanzo7@m.co","Hanzo8@m.co");
-        var list6 = help152("Hanzo","Hanzo1@m.co","Hanzo2@m.co");
-        var list7 = help152("Hanzo","Hanzo6@m.co","Hanzo7@m.co");
-        var list8 = help152("Hanzo","Hanzo5@m.co","Hanzo6@m.co");
+        var list1 = convertList("Hanzo", "Hanzo2@m.co", "Hanzo3@m.co");
+        var list2 = convertList("Hanzo", "Hanzo4@m.co", "Hanzo5@m.co");
+        var list3 = convertList("Hanzo", "Hanzo0@m.co", "Hanzo1@m.co");
+        var list4 = convertList("Hanzo", "Hanzo3@m.co", "Hanzo4@m.co");
+        var list5 = convertList("Hanzo", "Hanzo7@m.co", "Hanzo8@m.co");
+        var list6 = convertList("Hanzo", "Hanzo1@m.co", "Hanzo2@m.co");
+        var list7 = convertList("Hanzo", "Hanzo6@m.co", "Hanzo7@m.co");
+        var list8 = convertList("Hanzo", "Hanzo5@m.co", "Hanzo6@m.co");
         mainList.add(list1);
         mainList.add(list2);
         mainList.add(list3);
@@ -33,7 +49,7 @@ public class Main {
         }
     }
 
-    private static List<String> help152(String... emails) {
+    private static List<String> convertList(String... emails) {
         List<String> list = new ArrayList<>();
         for (String email : emails) list.add(email);
         return list;
@@ -41,7 +57,7 @@ public class Main {
 
     static void problem151() {
         Problem151 problem = new Problem151();
-        var ans = problem.findRedundantConnection(new int[][]{{1,2},{1,3},{1,4},{3,4},{4,5}});
+        var ans = problem.findRedundantConnection(new int[][]{{1, 2}, {1, 3}, {1, 4}, {3, 4}, {4, 5}});
         System.out.println(ans[0]);
         System.out.println(ans[1]);
     }
@@ -49,8 +65,8 @@ public class Main {
     static void problem150() {
         Problem150 problem = new Problem150();
         int numCourses = 4;
-        int[][] prerequisites = {{1,0},{2,1},{3,2}};
-        int[][] queries = {{0,1},{3,1}};
+        int[][] prerequisites = {{1, 0}, {2, 1}, {3, 2}};
+        int[][] queries = {{0, 1}, {3, 1}};
         var ans = problem.checkIfPrerequisite(numCourses, prerequisites, queries);
         System.out.println(ans);
     }
