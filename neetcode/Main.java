@@ -5,7 +5,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem155();
+        problem156();
+    }
+
+    static void problem156() {
+        Problem156 problem = new Problem156();
+        List<Integer> ans = problem.findMinHeightTrees(5, new int[][]{{0,1},{3,1},{2,3},{4,1}});
+        System.out.println(ans);
     }
 
     static void problem155() {
