@@ -5,13 +5,23 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem157();
+        problem158();
+    }
+
+    static void problem158() {
+        Problem158 problem = new Problem158();
+        int ans = problem.minimumEffortPath(new int[][]{{1, 1, 4, 8, 6}});
+        System.out.println(ans);
+        ans = problem.minimumEffortPath(new int[][]{{1}, {2}, {1}, {3}});
+        System.out.println(ans);
+        ans = problem.minimumEffortPath(new int[][]{{1, 1, 1}, {3, 2, 4}, {2, 5, 4}});
+        System.out.println(ans);
     }
 
     static void problem157() {
         Problem157 problem = new Problem157();
-        int ans1 = problem.ladderLength("cat", "sag", convertList("cat", "bat","bag","sag","dag","dot"));
-        int ans2 = problem.ladderLength("hit", "cog", convertList("hot","dot","dog", "lot", "log", "cog"));
+        int ans1 = problem.ladderLength("cat", "sag", convertList("cat", "bat", "bag", "sag", "dag", "dot"));
+        int ans2 = problem.ladderLength("hit", "cog", convertList("hot", "dot", "dog", "lot", "log", "cog"));
         int ans3 = problem.ladderLength("a", "c", convertList("a", "b", "c"));
         System.out.println(ans1);
         System.out.println(ans2);
@@ -20,7 +30,7 @@ public class Main {
 
     static void problem156() {
         Problem156 problem = new Problem156();
-        List<Integer> ans = problem.findMinHeightTrees(5, new int[][]{{0,1},{3,1},{2,3},{4,1}});
+        List<Integer> ans = problem.findMinHeightTrees(5, new int[][]{{0, 1}, {3, 1}, {2, 3}, {4, 1}});
         System.out.println(ans);
     }
 
