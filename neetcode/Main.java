@@ -5,7 +5,17 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem156();
+        problem157();
+    }
+
+    static void problem157() {
+        Problem157 problem = new Problem157();
+        int ans1 = problem.ladderLength("cat", "sag", convertList("cat", "bat","bag","sag","dag","dot"));
+        int ans2 = problem.ladderLength("hit", "cog", convertList("hot","dot","dog", "lot", "log", "cog"));
+        int ans3 = problem.ladderLength("a", "c", convertList("a", "b", "c"));
+        System.out.println(ans1);
+        System.out.println(ans2);
+        System.out.println(ans3);
     }
 
     static void problem156() {
