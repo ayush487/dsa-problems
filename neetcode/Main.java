@@ -5,7 +5,19 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem159();
+        problem160();
+    }
+
+    static void problem160() {
+        Problem160 problem = new Problem160();
+        List<String> ticket1 = List.of("HOU", "JFK");
+        List<String> ticket2 = List.of("SEA", "JFK");
+        List<String> ticket3 = List.of("JFK", "SEA");
+        List<String> ticket4 = List.of("JFK", "HOU");
+        List<String> ticket5 = List.of("JFK", "ASA");
+        List<List<String>> tickets = List.of(ticket1, ticket2, ticket3, ticket4, ticket5);
+        var ans = problem.findItinerary(tickets);
+        System.out.println(ans);
     }
 
     static void problem159() {
