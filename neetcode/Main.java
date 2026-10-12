@@ -5,7 +5,17 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem160();
+        problem161();
+    }
+
+    static void problem161() {
+        Problem161 problem = new Problem161();
+        var ans1 = problem.minCostConnectPoints(new int[][]{{0,0},{2,2},{3,3},{2,4},{4,2}});
+        System.out.println(ans1);
+        var ans2 = problem.minCostConnectPoints(new int[][]{{0,0},{2,2},{3,10},{5,2},{7,0}});
+        System.out.println(ans2);
+        var ans3 = problem.minCostConnectPoints(new int[][]{{2,-3},{-17,-8},{13,8},{-17,-15}});
+        System.out.println(ans3);
     }
 
     static void problem160() {
