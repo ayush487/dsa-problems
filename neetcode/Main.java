@@ -5,7 +5,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem163();
+        problem164();
+    }
+
+    static void problem164() {
+        Problem164 problem = new Problem164();
+        int ans = problem.minCostClimbingStairs(new int[]{1,2,3});
+        System.out.println(ans);
     }
 
     static void problem163() {
