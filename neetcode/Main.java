@@ -5,7 +5,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem164();
+        problem165();
+    }
+
+    static void problem165() {
+        Problem165 problem = new Problem165();
+        int ans = problem.tribonacci(21);
+        System.out.println(ans);
     }
 
     static void problem164() {
