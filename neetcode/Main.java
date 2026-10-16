@@ -5,7 +5,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem165();
+        problem166();
+    }
+
+    static void problem166() {
+        Problem166 problem = new Problem166();
+        int ans = problem.rob(new int[]{2,9,8,3,6});
+        System.out.println(ans);
     }
 
     static void problem165() {
