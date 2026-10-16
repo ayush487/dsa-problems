@@ -5,7 +5,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem166();
+        problem169();
+    }
+
+    static void problem169() {
+        Problem169 problem = new Problem169();
+        var ans = problem.countSubstrings("fdsklf");
+        System.out.println(ans);
     }
 
     static void problem166() {
