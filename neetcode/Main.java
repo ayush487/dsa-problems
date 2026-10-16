@@ -5,7 +5,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem169();
+        problem170();
+    }
+
+    static void problem170() {
+        Problem170 problem = new Problem170();
+        var ans = problem.numDecodings("12");
+        System.out.println(ans);
     }
 
     static void problem169() {
