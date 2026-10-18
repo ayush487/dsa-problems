@@ -5,7 +5,15 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem170();
+        problem173();
+    }
+
+    static void problem173() {
+        Problem173 problem = new Problem173();
+        var ans1 = problem.wordBreak("applepenapple", convertList("apple", "pen", "ape"));
+        var ans2 = problem.wordBreak("catsincars", convertList("cats", "cat", "sin", "in", "car"));
+        System.out.println(ans1);
+        System.out.println(ans2);
     }
 
     static void problem170() {
