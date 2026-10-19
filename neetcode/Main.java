@@ -5,7 +5,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        problem173();
+        problem174();
+    }
+
+    static void problem174() {
+        Problem174 problem = new Problem174();
+        int ans = problem.lengthOfLIS(new int[]{9,1,4,2,3,3,7});
+        System.out.println(ans);
     }
 
     static void problem173() {
